@@ -7,7 +7,7 @@ const navItems = [
         url: "/",
     },
     {
-        title: "Events",
+        title: "Mission and Vision",
         url: "/",
     },
     {
