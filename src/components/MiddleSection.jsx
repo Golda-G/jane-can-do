@@ -18,7 +18,7 @@ const MiddleSection = () => {
                 </p> 
           </h6>
         </div>
-      <div className="hidden md:absolute md:translate-x-2 md:-translate-y-2 md:inset-0 sm:z-10 bg-gradient-to-br from-pink-500
+      <div className="max-sm:hidden md:absolute md:translate-x-2 md:-translate-y-2 md:inset-0 sm:z-10 bg-gradient-to-br from-pink-500
        via-violet-300 to-violet-600 rounded-full"></div>
     </div>
 
