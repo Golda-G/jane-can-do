@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import janelogo from "../assets/janelogo.png"
+import janelogo from "../assets/Janelogo.png"
 import { useScroll, useMotionValueEvent } from "framer-motion"
 import MobileMenu from "./MobileMenu"
 
