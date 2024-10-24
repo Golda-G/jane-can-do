@@ -23,7 +23,7 @@ const MiddleSection = () => {
     </div>
 
     <div className="md:relative md:col-start-4 md:col-span-3 md:row-start-3 md:row-span-3 md:mr-2"> 
-      <div className="border border-gray-400 bg-gray-300 md:rounded-full p-16 md:relative md:z-20 
+      <div className="border border-gray-400 bg-gray-300 md:rounded-full md:p-16 md:relative md:z-20 
       hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
       <h6 className="leading-5 font-poppins">
           Jane Can Do is Ghana&apos;s pioneering open directory dedicated to 
