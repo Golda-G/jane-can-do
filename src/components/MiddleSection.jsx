@@ -5,7 +5,7 @@ const MiddleSection = () => {
   return (
     <section >
      
-  <div className="my-10 grid grid-cols-1 md:grid-rows-6 md:grid-cols-6 text-center text-black md:overflow-x-hidden">
+  <div className="my-10 grid grid-cols-1 bg-slate-300 md:grid-rows-6 md:grid-cols-6 text-center text-black md:overflow-x-hidden">
 
     <div className="pt-2 md:relative md:col-start-1 md:col-span-3 md:row-start-1 md:row-span-3 md:ml-2"> 
       <div className="border border-gray-400 bg-gray-300 md:rounded-full md:p-16 md:relative md:z-20
