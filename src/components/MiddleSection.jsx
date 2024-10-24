@@ -7,7 +7,7 @@ const MiddleSection = () => {
      
   <div className="my-10 grid grid-cols-1 md:grid-rows-6 md:grid-cols-6 text-center text-black md:overflow-x-hidden">
 
-    <div className="pt-2 md:relative md:col-start-1 md:col-span-3 md:row-start-1 md:row-span-3 md:ml-2"> 
+    <div className="bg-black pt-2 md:relative md:col-start-1 md:col-span-3 md:row-start-1 md:row-span-3 md:ml-2"> 
       <div className="border border-gray-400 bg-black md:rounded-full md:p-16 md:relative md:z-20
       hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
       <h6 className="leading-5">
