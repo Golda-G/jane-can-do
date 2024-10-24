@@ -5,7 +5,7 @@ const MiddleSection = () => {
   return (
     <section >
      
-  <div className="my-10 grid grid-cols-1 bg-slate-300 md:grid-rows-6 md:grid-cols-6 text-center text-black md:overflow-x-hidden">
+  <div className="my-10 grid grid-cols-1 md:grid-rows-6 md:grid-cols-6 text-center text-black md:overflow-x-hidden">
 
     <div className="pt-2 md:relative md:col-start-1 md:col-span-3 md:row-start-1 md:row-span-3 md:ml-2"> 
       <div className="border border-gray-400 bg-gray-300 md:rounded-full md:p-16 md:relative md:z-20
@@ -22,8 +22,8 @@ const MiddleSection = () => {
        via-violet-300 to-violet-600 rounded-full"></div>
     </div>
 
-    <div className="relative col-start-4 col-span-3 row-start-3 row-span-3 mr-2"> 
-      <div className="border border-gray-400 bg-gray-300 rounded-full p-16 relative z-20 
+    <div className="md:relative md:col-start-4 md:col-span-3 md:row-start-3 md:row-span-3 mr-2"> 
+      <div className="border border-gray-400 bg-gray-300 md:rounded-full p-16 md:relative md:z-20 
       hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
       <h6 className="leading-5 font-poppins">
           Jane Can Do is Ghana&apos;s pioneering open directory dedicated to 
@@ -33,7 +33,7 @@ const MiddleSection = () => {
           </p>
           </h6>
       </div>
-      <div className="absolute translate-x-2 -translate-y-2 inset-0 bottom-5 z-10 bg-gradient-to-br from-pink-500
+      <div className="hidden lg:block md:absolute md:translate-x-2 md:-translate-y-2 md:inset-0 md:bottom-5 md:z-10 bg-gradient-to-br from-pink-500
        via-violet-300 to-violet-600 rounded-full"></div>
     </div>
 
