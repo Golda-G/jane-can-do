@@ -1,8 +1,8 @@
-import NavBar from '../components/NavBar'
-import HeroSection from '../components/HeroSection'
+import NavBar from './NavBar'
+import HeroSection from './HeroSection'
 import {expos} from "../data/expos"
-import Slider from '../components/Slider'
-import MiddleSection from '../components/MiddleSection'
+import Slider from './Slider'
+import MiddleSection from './MiddleSection'
 
 function Home() {
   
@@ -26,10 +26,7 @@ function Home() {
       <HeroSection />
 
       </div>
-      
            <MiddleSection/>
-      
-      
     </div>
     <div className='mt-40'><Slider images={expos}/></div>
     

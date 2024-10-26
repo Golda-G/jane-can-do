@@ -62,8 +62,10 @@ const NavBar = () => {
             </ul>
         </nav>
         <div className="hidden md:block">
-            <a className="bg-black px-4 py-2 rounded-md text-white cursor-pointer">Login</a>
-            <a className="bg-black px-4 py-2 rounded-md text-white cursor-pointer ml-2"> Signup</a>
+            <a className="bg-black px-4 py-2 rounded-md text-white cursor-pointer"
+            onClick={() =>navigate("/loginuser")}>Login</a>
+            <a className="bg-black px-4 py-2 rounded-md text-white cursor-pointer ml-2"
+            onClick={() =>navigate("/signupuser")}> Signup</a>
         </div>
         <MobileMenu/>
     </div>
