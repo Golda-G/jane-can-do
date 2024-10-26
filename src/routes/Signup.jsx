@@ -1,14 +1,15 @@
 import { useState, } from 'react';
 import {auth} from '../firebase';
 import { createUserWithEmailAndPassword} from 'firebase/auth';
-//import { useNavigate} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 const Signup = () => {
   
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
   
-  
+  const navigate = useNavigate()
+
     const handleRegister = (e) => {
       e.preventDefault();
   
@@ -19,6 +20,7 @@ const Signup = () => {
       .catch ((error) => {
         console.log(error)
   });
+  navigate("/")
   
   };
 
