@@ -8,11 +8,11 @@ const navItems = [
     },
     {
         title: "Mission and Vision",
-        url: "/",
+        url: "/missionandvision",
     },
     {
         title: "Signup",
-        url: "/",
+        url: "/signupuser",
     },
     {
         title: "Login",
@@ -36,10 +36,10 @@ const MobileMenu = () => {
              </button>
              <div className="absolute left-0 w-full top-10
              bg-white/60 backdrop-blur-lg border-b border-t">
-                  <ul className="flex flex-col py-4 items-center">
+                  <ul className=" flex flex-col py-4 items-center">
 
                 {navItems.map((item, index) => (
-                <li key={index}>
+                <li key={index} className="hover:bg-pink-300 w-full text-center">
                      <a
                        href={item.url}
                        className="block text-gray-600 p-4"

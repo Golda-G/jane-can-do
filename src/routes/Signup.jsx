@@ -1,7 +1,11 @@
-import { auth } from '../firebase';
+import { auth, db} from '../firebase';
 import { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import {setDoc, doc} from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Signup = () => {
   
@@ -10,17 +14,27 @@ const Signup = () => {
   
   const navigate = useNavigate()
 
-    const handleRegister = (e) => {
+    const handleRegister = async (e) => {
       e.preventDefault();
-  
-      createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
-      })
-      .catch ((error) => {
-        console.log(error)
-  });
-  navigate("/");
+      try {
+        await createUserWithEmailAndPassword(auth, email, password);
+        const user = auth.currentUser
+          console.log(user);
+            if (user) {
+              await setDoc(doc(db, "Users", user.uid),{
+                email: user.email,
+              });
+            }
+            console.log("User Registered Successfully!!")
+            toast.success("Registered Successfully!!", {
+              position: "top-center"
+            });
+            navigate("/");
+
+           } catch (error) {
+             console.log(error.message)
+           };
+          
   
   };
 
@@ -47,7 +61,7 @@ return (
     </div>
     
     <div className="flex items-center justify-between">
-      <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+      <button type="submit" className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
         Sign Up
       </button>
       <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">

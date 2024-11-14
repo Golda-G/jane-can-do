@@ -8,7 +8,7 @@ function Home() {
   
 
   return (
-    <div className='bg-gradient-to-r from-purple-200 via-pink-300 to-purple-400 '> 
+    <div className='bg-gradient-to-r from-purple-100 via-pink-200 to-purple-300 '> 
       <div className='w-screen min-h-screen fixed z-0 flex justify-center 
         pointer-events-none'>
         <div className="absolute inset-0 bg-[url('/grid.svg')] 
